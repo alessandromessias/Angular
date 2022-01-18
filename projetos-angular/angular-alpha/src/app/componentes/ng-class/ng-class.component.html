@@ -1,0 +1,26 @@
+<div class="content">
+    <h2>Implementação ngClass</h2>
+
+    <!--algumas alternativas oferecidas pela diretiva ngClass-->
+<div [ngClass] = "'color size'">   
+    <p>Cor e fonte alterado pelos atributos CSS - descritos no arquivo.css. Aqui, como propriedade de string</p>
+</div>
+
+<div ngClass = 'color size'>
+    <p>Cor e fonte alterado pelos atributos CSS - descritos no arquivo.css. Aqui, com atribuição direta de classes CSS</p>
+</div>
+
+<div [ngClass] = "['color','size']">
+    <p>Cor e fonte alterado pelos atributos CSS - descritos no arquivo.CSS. Aqui, como uma atribuição de array de string.</p>
+</div>
+<div [ngClass] = "{'color':true,'size':true}">
+    <p>Cor e fonte alterado pelos atributos CSS - descritos no arquivo.css Aqui, como atribuição de um objeto key:value - chave:valor</p>
+</div>
+
+<div [ngClass] = "cssAlteradoViaVar">
+    <p>Cor e fonte alterado pelos atributos CSS - descritos no arquivo.ts - atribuição de 
+        propriedade (property binding)
+    </p>
+</div>
+
+</div>
